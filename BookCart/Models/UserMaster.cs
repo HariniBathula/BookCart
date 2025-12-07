@@ -1,13 +1,21 @@
-﻿namespace BookCart.Models
+﻿using System;
+using System.Collections.Generic;
+
+namespace BookCart.Models;
+
+public partial class UserMaster
 {
-    public partial class UserMaster
-    {
-        public int UserId { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public string Gender { get; set; }
-        public int UserTypeId { get; set; }
-    }
+    public int UserId { get; set; }
+
+    public string FirstName { get; set; } = null!;
+
+    public string LastName { get; set; } = null!;
+
+    public string Username { get; set; } = null!;
+
+    public string Password { get; set; } = null!;
+
+    public string Gender { get; set; } = null!;
+
+    public int UserTypeId { get; set; }
 }

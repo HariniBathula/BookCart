@@ -1,4 +1,4 @@
-Scaffold-DbContext "Your connection string" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Tables Categories, UserType, UserMaster, Book, Cart, CartItems, CustomerOrders, CustomerOrderDetails, Wishlist, WishlistItems -force
+Scaffold-DbContext "(localdb)\MSSQLLocalDB" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Tables Categories, UserType, UserMaster, Book, Cart, CartItems, CustomerOrders, CustomerOrderDetails, Wishlist, WishlistItems -force
 
 ---------------------------------------------------------------------------------------
 CREATE TABLE Categories (  

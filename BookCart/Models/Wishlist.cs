@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace BookCart.Models
+namespace BookCart.Models;
+
+public partial class Wishlist
 {
-    public partial class Wishlist
-    {
-        public string WishlistId { get; set; }
-        public int UserId { get; set; }
-        public DateTime DateCreated { get; set; }
-    }
+    public string WishlistId { get; set; } = null!;
+
+    public int UserId { get; set; }
+
+    public DateTime DateCreated { get; set; }
 }

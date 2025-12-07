@@ -17,17 +17,7 @@ builder.Services.AddSwaggerGen(c =>
     {
         Title = "BookCart API",
         Description = "An ASP.NET Core Web API for managing the book data",
-        Version = "v1",
-        Contact = new OpenApiContact
-        {
-            Name = "Ankit Sharma",
-            Url = new Uri("https://ankitsharmablogs.com/"),
-        },
-        License = new OpenApiLicense
-        {
-            Name = "MIT License",
-            Url = new Uri("https://github.com/AnkitSharma-007/BookCart/blob/master/LICENSE"),
-        }
+        Version = "v1"
     });
 
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
